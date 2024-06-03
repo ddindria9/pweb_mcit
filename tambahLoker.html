@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Lowongan Pekerjaan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tambah Lowongan Pekerjaan</h1>
+        <form id="job-form">
+            <div class="form-group">
+                <label for="job-title">Nama Lowongan:</label>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+            <div class="form-group">
+                <label for="job-description">Deskripsi Pekerjaan:</label>
+                <textarea id="job-description" name="job-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="qualifications">Kualifikasi:</label>
+                <textarea id="qualifications" name="qualifications" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="salary">Gaji:</label>
+                <input type="text" id="salary" name="salary" required>
+            </div>
+            <button type="submit" class="btn-save">Tambah</button>
+        </form>
+    </div>
+</body>
+</html>

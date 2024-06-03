@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Detail Page</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web Development Bootcamp</h1>
+            <button class="enroll-button">Belajar Sekarang</button>
+        </header>
+        <section class="description">
+            <h2>Deskripsi Materi</h2>
+            <p>Dalam bootcamp ini, Anda akan belajar dasar-dasar hingga teknik lanjutan dalam pengembangan web, termasuk HTML, CSS, JavaScript, dan banyak lagi.</p>
+        </section>
+        <section class="materials">
+            <h2>Materi yang Akan Dipelajari</h2>
+            <ul class="material-list">
+                <li>
+                    <div class="material-item" onclick="toggleSubMaterial(this)">
+                        <span class="material-title">Pengenalan HTML</span>
+                        <span class="dropdown-icon">▼</span>
+                        <ul class="sub-material-list">
+                            <li>Tag dan Elemen HTML</li>
+                            <li>Struktur Dasar HTML</li>
+                            <li>Form dan Input HTML</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="material-item" onclick="toggleSubMaterial(this)">
+                        <span class="material-title">Styling dengan CSS</span>
+                        <span class="dropdown-icon">▼</span>
+                        <ul class="sub-material-list">
+                            <li>Selector dan Properti CSS</li>
+                            <li>Layouting dengan Flexbox</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="material-item" onclick="toggleSubMaterial(this)">
+                        <span class="material-title">JavaScript Dasar</span>
+                        <span class="dropdown-icon">▼</span>
+                        <ul class="sub-material-list">
+                            <li>Variabel dan Tipe Data</li>
+                            <li>Fungsi dan Event Handling</li>
+                            <li>Manipulasi DOM</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="material-item" onclick="toggleSubMaterial(this)">
+                        <span class="material-title">Framework Front-end: React</span>
+                        <span class="dropdown-icon">▼</span>
+                        <ul class="sub-material-list">
+                            <li>Pengenalan React</li>
+                            <li>Component dan Props</li>
+                            <li>State Management</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="material-item" onclick="toggleSubMaterial(this)">
+                        <span class="material-title">Backend Development dengan Node.js</span>
+                        <span class="dropdown-icon">▼</span>
+                        <ul class="sub-material-list">
+                            <li>Pengenalan Node.js</li>
+                            <li>Membuat Server dengan Express</li>
+                            <li>Database dengan MongoDB</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        function toggleSubMaterial(element) {
+            const subMaterialList = element.querySelector('.sub-material-list');
+            const dropdownIcon = element.querySelector('.dropdown-icon');
+            if (subMaterialList.style.display === "block") {
+                subMaterialList.style.display = "none";
+                dropdownIcon.textContent = "▼";
+            } else {
+                subMaterialList.style.display = "block";
+                dropdownIcon.textContent = "▲";
+            }
+        }
+    </script>
+</body>
+</html>

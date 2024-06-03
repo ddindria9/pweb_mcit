@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #0f0f5a;
+    margin: 0;
+}
+
+.enroll-button {
+    background-color: #0f0f5a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enroll-button:hover {
+    background-color: #00008b;
+}
+
+.description {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.description h2 {
+    color: #0f0f5a;
+    margin-top: 0;
+}
+
+.materials {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.materials h2 {
+    color: #0f0f5a;
+    margin-top: 0;
+}
+
+.material-list {
+    list-style: none;
+    padding: 0;
+}
+
+.material-item {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.material-title {
+    color: #0f0f5a;
+    font-weight: bold;
+}
+
+.dropdown-icon {
+    font-size: 18px;
+    color: #0f0f5a;
+}
+
+.sub-material-list {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 20px;
+    display: none;
+}
+
+.sub-material-list li {
+    color: #333;
+    padding: 5px 0;
+}

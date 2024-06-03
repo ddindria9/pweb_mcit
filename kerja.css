@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #0f0f5a;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.add-button {
+    background-color: #0f0f5a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-button:hover {
+    background-color: #00008b;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #0f0f5a;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.job-name {
+    width: 80%;
+}
+
+.actions {
+    width: 20%;
+}
+
+.action-button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-button {
+    background-color: #171473;
+    color: white;
+    border: none;
+}
+
+.edit-button:hover {
+    background-color: #00008b;
+}
+
+.delete-button {
+    background-color: white;
+    color: #171473;
+    border: 2px solid #171473;
+}
+
+.delete-button:hover {
+    background-color: #f2f2f2;
+}
